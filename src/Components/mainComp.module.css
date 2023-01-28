@@ -1,0 +1,18 @@
+.mainCont {
+    overflow-y: scroll;
+}
+
+.mainCont::-webkit-scrollbar {
+    width: 0.1rem;
+    height: 0.75rem;
+    display: block;
+  }
+  
+  .mainCont::-webkit-scrollbar-thumb {
+    background-color: #dee2e9;
+    border-radius: 1rem;
+  }
+  
+  .mainCont::-webkit-scrollbar-track {
+    -webkit-appearance: none;
+  }

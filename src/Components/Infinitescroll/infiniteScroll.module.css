@@ -1,0 +1,138 @@
+.thumbnail {
+    height:10rem;
+    width: 10rem;
+}
+
+.infiniteContainer {
+    display: grid;
+    grid-template-columns: repeat(7,14rem);
+    padding-bottom: 2rem;
+    background-color: #041226;
+}
+
+.tileData {
+    display: flex;
+    border: 1px solid black;
+    padding: 1rem;
+    flex-direction: column;
+    margin-left: 2rem;
+    padding-bottom: 0rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+.tileText {
+    margin-top: 0.5rem;
+}
+
+.overlay {
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.ellipsis {
+  max-width: 10rem;
+  height: 1.2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.linkingBg {
+  width: 100%;
+  background-color: #041226;
+  padding-bottom: 2rem;
+}
+
+
+@media (min-width: 280px) {
+  .infiniteContainer { 
+    grid-template-columns: repeat(1, 15rem); 
+  }
+  .tileData {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 360px) {
+  .infiniteContainer { 
+    grid-template-columns: repeat(1, 17rem); 
+  }
+  .tileData {
+    margin-left: 5rem;
+  }
+}
+
+
+@media (min-width: 414px) {
+  .infiniteContainer { 
+    grid-template-columns: repeat(1, 19rem); 
+  }
+  .tileData {
+    margin-left: 7rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .infiniteContainer { 
+    grid-template-columns: repeat(2, 15rem); 
+  }
+  .tileData {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .infiniteContainer { 
+    grid-template-columns: repeat(3, 15rem); 
+  }
+  .tileData {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 912px) {
+  .infiniteContainer { 
+    grid-template-columns: repeat(3, 17rem); 
+  }
+  .tileData {
+    margin-left: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .infiniteContainer { 
+    grid-template-columns: repeat(4, 15rem); 
+  }
+  .tileData {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .infiniteContainer { 
+    grid-template-columns: repeat(5, 15rem); 
+  }
+  .tileData {
+    margin-left: 3rem;
+  }
+}
+
+@media (width > 1280px) {
+  .infiniteContainer { 
+    grid-template-columns: repeat(7, 14rem); 
+  }
+  .tileData {
+    margin-left: 2rem;
+  }
+}
+

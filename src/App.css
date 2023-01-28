@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Rubik-Light;
 }
 
 .App-logo {
@@ -11,6 +12,16 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+@font-face {
+  font-family: Rubik-Light;
+  src: url(../src/Assets/Rubik-Light.ttf);
+}
+
+@font-face {
+  font-family: Rubik-Medium;
+  src: url(../src/Assets/Rubik-Medium.ttf);
 }
 
 .App-header {
