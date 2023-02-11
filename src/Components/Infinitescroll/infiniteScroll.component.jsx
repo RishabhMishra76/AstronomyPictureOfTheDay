@@ -46,7 +46,7 @@ function InfiniteScroll() {
   const [rowCount, setRowCount] = useState(1);
   const [modalData, setModalData] = useState({})
   const today = new Date();
-  const initialDate = useRef(moment(today).subtract(1, "d").format("YYYY-MM-DD"));
+  const initialDate = useRef(moment(today).format("YYYY-MM-DD"));
   const getResponse = async (currentDate, finalDate) => {
     const response = await fetch(
       "https://api.nasa.gov/planetary/apod?api_key=gaff4Pwpu0Qg6woyFty1YhVRxhj4In1ImvOCyFD7&start_date=" +
